@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Fundación Wilde</title>
-    <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fundación Wilde</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <img src="logotipo.png" alt="Logo Fundación Wilde" class="logo" />
-        </div>
-    </header>
 
-    <section class="bienvenida">
-        <h1>Bienvenidos a Fundación Wilde</h1>
-        <p>Comprometidos con el bienestar y el desarrollo social de nuestra comunidad.</p>
-    </section>
+  <!-- Sección superior -->
+  <div class="seccion-superior">
+    <img src="logotipo.png" alt="Logo Fundación Wilde" class="logo">
+  </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienessomos.html">Quiénes Somos</a></li>
-            <li><a href="manos.html">Manos que Suman</a></li>
-            <li><a href="donar.html">Donar</a></li>
-            <li><a href="https://wa.me/5491121577000" target="_blank">Contacto</a></li>
-        </ul>
-    </nav>
+  <!-- Bienvenida -->
+  <section class="bienvenida">
+    <h1>Bienvenidos a Fundación Wilde</h1>
+    <p>Comprometidos con el bienestar y el desarrollo social de nuestra comunidad.</p>
+  </section>
 
-    <main class="botones">
-        <a href="campanias.html" class="boton">Campañas/Donaciones</a>
-        <a href="donar.html" class="boton">Donar</a>
-        <a href="https://wa.me/5491121577000" class="boton" target="_blank">Contacto</a>
-    </main>
+  <!-- Navegación -->
+  <nav class="navegacion">
+    <a href="index.html">Inicio</a>
+    <a href="quienessomos.html">Quiénes Somos</a>
+    <a href="manosquesuman.html">Manos que Suman</a>
+    <a href="https://wa.me/5491121577000" target="_blank">Contacto</a>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 Fundación Wilde. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Botones destacados -->
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+    <a href="campanias.html" style="text-decoration: none;">
+      <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; min-width: 200px; text-align: center;">
+        <strong>Campañas/Donaciones</strong>
+      </div>
+    </a>
+
+    <a href="donar.html" style="text-decoration: none;">
+      <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; min-width: 200px; text-align: center;">
+        <strong>Donar</strong>
+      </div>
+    </a>
+
+    <a href="https://wa.me/5491121577000" target="_blank" style="text-decoration: none;">
+      <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; min-width: 200px; text-align: center;">
+        <strong>Contacto</strong>
+      </div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer style="margin-top: 50px; text-align: center; background-color: #000; color: white; padding: 20px;">
+    © 2025 Fundación Wilde. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
 
