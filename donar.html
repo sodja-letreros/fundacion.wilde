@@ -2,35 +2,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Formulario de Donación</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donar - Fundación Wilde</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f6f6f6; padding: 30px; }
-    .form-container {
-      max-width: 500px; margin: auto; background: white; padding: 30px;
-      border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #8e2de2, #e04b8e);
+      color: #fff;
     }
-    input, select, textarea, button {
-      width: 100%; padding: 10px; margin: 10px 0;
-      border-radius: 5px; border: 1px solid #ccc;
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.05);
     }
-    button { background: #8e2de2; color: white; border: none; }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    form {
+      background: white;
+      color: #333;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    button {
+      background: #8e2de2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #7326b9;
+    }
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <h2>Formulario de Donación</h2>
-    <form action="https://formspree.io/f/xjkwlobo" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="_replyto" placeholder="Tu email" required>
-      <select name="tipo">
-        <option value="Donación monetaria">Donación monetaria</option>
-        <option value="Materiales o ropa">Materiales o ropa</option>
-        <option value="Voluntariado">Voluntariado</option>
-      </select>
-      <textarea name="mensaje" rows="4" placeholder="Mensaje..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
+  <header>
+    <h1>Sumate a nuestra causa 💜</h1>
+    <p>Completá el formulario para colaborar con la Fundación Wilde</p>
+  </header>
+
+  <form action="mailto:fundacionwilde@ejemplo.org" method="POST" enctype="text/plain">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="Nombre" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="tipo">¿Cómo querés colaborar?</label>
+    <select id="tipo" name="Forma de colaboración">
+      <option value="Donación monetaria">Donación monetaria</option>
+      <option value="Materiales o ropa">Materiales o ropa</option>
+      <option value="Voluntariado">Voluntariado</option>
+    </select>
+
+    <label for="mensaje">Mensaje o monto sugerido</label>
+    <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Escribinos tu propuesta..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>
+
+  
